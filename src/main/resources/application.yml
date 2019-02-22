@@ -1,0 +1,24 @@
+app:
+  name: Nuansa-Pos
+
+spring:
+  messages:
+    basename: message/messages
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        jdbc:
+          lob:
+          non_contextual_creation: true
+
+  datasource:
+    platform: mysql
+    url: jdbc:mariadb://localhost:3306/nuansa_pos
+    username: root
+
+security:
+  key: 3935C01A8AE8D48F46CCEB425DAD4D2612F0098895E24B23CDA0AB17797D6AF2
+  secret: J7vRQCe6G3qmDSKqbASj65NLLMq6Md785kXzFCkJK56ydHcqFsGdyrRXqzhs7yzR
+  expiration: 3600000
